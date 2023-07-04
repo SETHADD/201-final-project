@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CABPAIR</title>
+        <meta name="description" content="Are you ready to save the world? Are you willing to save some money? Jump on with another driver heading your way">
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+    </head>
+<header><h1><u>FIND A DRIVING BUDDY</u></h1></header>
+<body>
+    <main>
+        <section>
+            <div>
+                <form id="containerForms">
+                    <fieldset>
+                        <legend>FILL IN DETAILS </legend>
+
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" 
+                        placeholder="Full Name">
+
+                        <label for="location"></label>
+                        <input type="text" id="location" name="location" placeholder="Pick-up location">
+
+                        <label for="destination">DESTINATION</label>
+                        <input type="text" id="destination" name="destination" placeholder="Enter Your Destination">
+
+                        <label for="date">Date and Time</label>
+                        <input type="datetime-local" id="date" name="date" placeholder="date and time">
+
+                        <label for="vehicle">vehicle</label>
+                        <select name="vehicle" id="vehicle" required>
+                            <option hidden selected>Select one</option>
+                            <option value="personalCar">Personal Car</option>
+                            <option value="taxi">Taxi</option>
+                            <option value="bolt">Bolt</option>
+                            <option value="Uber">Uber</option>
+                        </select>
+
+                        <label for="telephone">Telephone Number</label>
+                        <input type="tel" id="telephone" name="telephone" placeholder="Telephone number">
+
+                        <!-- <input id="submit" type="submit" name="submit"> -->
+                    </fieldset>
+                    <button type="submit" id="submit">Submit</button>
+                </form>
+            </div>
+        </section>
+    </main> 
+    <footer>
+      <div><h2> &#9400; CabPair</h2></div>
+      <div>
+      <ul>
+          <li><a href="" target="_blank">Facebook</a></li>
+          <li><a href="" target="_blank">Twitter</a></li>
+          <li><a href="" target="_blank">Instagram</a></li>
+          <li><a href="" target="_blank">Linkdin</a></li>
+      </ul>
+      </div>
+    </footer> 
+    <script src="pair.js"></script>
+</body>
+</html>
