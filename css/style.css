@@ -1,0 +1,209 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-width:320px;
+    font-size: 1rem;
+    font-weight: 400;
+    letter-spacing: 0.01rem;
+    line-height: 1.6;
+    color: white;
+
+    background-image: url("/images/pexels-cesar-perez-733745.jpg");
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+}
+    
+
+li{
+    display: inline;
+    margin: 0 1rem;
+}
+
+#rideContainer li{
+    display: inline;
+    list-style: circle inside;
+    background-color:rgba(255,255,255,0.2) ;
+    width: 20%;
+}
+
+div h2 {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+}
+
+/* for all the pages */
+header{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    font-weight: 900;
+    font-family: "Sofia", sans-serif;
+    font-size: 2rem;
+}
+
+/* for the index page */
+.headerContainer{
+    background-color: rgba(255,255,255,0.2);
+}
+
+.headerContainer a {
+    text-decoration:none ;
+    color: rgba(255,255,255);
+    font-weight: 900;
+    font-family: "Sofia", sans-serif;
+    font-size: 30px;
+}
+
+.headerContainer a:hover{
+    cursor: pointer;
+    color: #EABA8C;
+}
+
+/* replicate on other pages as well */
+.logo{
+    width: 200px;
+    height: 52px;
+    position: absolute;
+    z-index: 4;
+    top: 0;
+    left: 0;
+}
+
+/* for the about tackle later */
+article p {
+    background: rgba(0, 0, 0, 0.5);
+    width: 39%;
+    padding: 2%;
+    height: 23rem;
+    font-size: large;
+    position: relative;
+    left: 30%;
+    top: 15%;
+    margin-bottom: 4%;
+    overflow-y:visible;
+}
+
+.contact div{
+    display: inline;
+    text-align: center;
+    color: black;
+    font-weight: 600;
+}
+
+.contact div :first-child{
+    background-color: white;
+    width: 100%;
+    /* padding-left: 1%; */
+    /* position: relative;
+    left: 13%; */
+
+    
+    
+}
+
+form{
+    /* width: 70%; */
+    display: flex;
+    flex-direction: column;
+    color: #EABA8C;
+    text-align: center;
+    margin-top: 2rem;
+    margin-left: 6rem;
+    margin-right: 6rem;
+    padding: 1rem;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+fieldset{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left:3rem ;
+    padding-right: 3rem;
+    width: 30%;
+    margin-bottom: 1rem;
+    position: relative;
+    left: 36%;
+}
+
+input{
+    height: 1.5rem;
+}
+
+#vehicle{
+    height: 1.5rem;
+}
+
+#submit{
+    width: 30%;
+    height: 2rem;
+    background-color: #EABA8C;
+    position: relative;
+    left: 36%;
+    font-size: 1.5rem;
+}
+
+#submit:hover{
+    cursor: pointer;
+    background-color: beige;
+}
+
+footer{
+    display: flex;
+    background: rgba(0, 0, 0, 0.9);
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    margin-top: 2px;
+}
+
+
+
+
+.fa {display: flexbox;
+
+    position: relative;
+    left: 200%;
+    padding: 20px;
+    font-size: 30px;
+    width: auto;
+    /* width: 40px; */
+    text-align: center;
+    text-decoration: none;
+    /* margin: 5px 3px; */
+}
+
+
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+background: #3B5998;
+color: white;
+}
+
+.fa-twitter {
+background: #55ACEE;
+color: white;
+}
+.fa-linkedin {
+background: #007bb5;
+color: white;
+}
+.fa-instagram {
+background: #125688;
+color: white;
+}
+

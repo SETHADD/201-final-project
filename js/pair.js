@@ -2,7 +2,7 @@
 
 console.log('loads of eventLIsteners will go on here')
 
-//create an instance from each submit
+// create an instance from each submit
 // push all instances into an array and
 // save each instance in a local storage
 
@@ -24,7 +24,7 @@ function Find(findName,findLocation,findDestination,findDate,findVehicle,findTel
     this.findLocation = findLocation,
     this.findDestination = findDestination,
     this.findDate = findDate,
-    this.findvehicle = findVehicle,
+    this.findVehicle = findVehicle,
     this.findTelephone = findTelephone,
     allForm.push(this)
 };
@@ -37,8 +37,8 @@ containerForms.addEventListener("submit",function store(event){
     getForms()
 
     const storeName = event.target.name.value
-    const storeLocation = event.target.location.value
-    const storeDestination = event.target.destination.value
+    const storeLocation = event.target.location.value.toLowerCase()
+    const storeDestination = event.target.destination.value.toLowerCase()
     const storeDate = event.target.date.value
     const storeVehicle = event.target.vehicle.value
     const storeTelephone = event.target.telephone.value
