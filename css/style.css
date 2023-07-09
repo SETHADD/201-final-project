@@ -11,7 +11,6 @@ body{
     letter-spacing: 0.01rem;
     line-height: 1.6;
     color: white;
-
     background-image: url("/images/pexels-cesar-perez-733745.jpg");
     background-size: cover;
     -webkit-background-size: cover;
@@ -29,14 +28,15 @@ li{
 }
 
 #rideContainer li{
-    display: inline;
+    display: block;
     list-style: circle inside;
     background-color:rgb(14, 1, 1) ;
     width: 20%;
+    margin-bottom: 5px;
 }
 
 div h2 {
-    padding: 20px;
+    padding: 0 20px;
     font-size: 30px;
     width: 50px;
 }
@@ -90,7 +90,11 @@ article p {
     left: 30%;
     top: 15%;
     margin-bottom: 4%;
-    overflow-y:visible;
+    overflow-y:scroll;
+}
+
+article p::-webkit-scrollbar {
+    display: none;
 }
 
 .contact div{
@@ -160,24 +164,22 @@ input{
 
 footer{
     display: flex;
-    background: rgba(0, 0, 0, 0.9);
+    background: black;
     position: fixed;
     bottom: 0;
     width: 100%;
-    margin-top: 2px;
+    height: 3rem;
+    /* margin-top: 2px; */
 }
 
 
 
 
 .fa {display: flexbox;
-
     position: relative;
     left: 200%;
-    padding: 20px;
+    padding: 10px 20px;
     font-size: 30px;
-    width: auto;
-    /* width: 40px; */
     text-align: center;
     text-decoration: none;
     /* margin: 5px 3px; */

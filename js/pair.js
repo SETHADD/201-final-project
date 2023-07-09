@@ -16,8 +16,14 @@ console.log('loads of eventLIsteners will go on here')
 
 const containerForms = document.getElementById("containerForms");
 
-let allForm = [];
 
+// let today = new Date().toISOString()
+// const getDate = document.getElementsByName('date')[0]
+// getDate.setAttribute("min",today)
+
+// console.log(today)
+
+let allForm = [];
 
 function Find(findName,findLocation,findDestination,findDate,findVehicle,findTelephone){
     this.findName = findName,
@@ -51,6 +57,8 @@ containerForms.addEventListener("submit",function store(event){
 
 
     setForms()
+
+    alert("SUCCESSFUL SUBMISSION THANK YOU!")
 
      
     containerForms.reset();

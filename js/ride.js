@@ -16,14 +16,6 @@ const journeys = JSON.parse(localStorage.getItem("allForms"))
 console.log(journeys[0].findName)
 console.log(journeys[0])
 
-// function Find(findName,findLocation,findDestination,findDate,findVehicle,findTelephone){
-//     this.findName = findName,
-//     this.findLocation = findLocation,
-//     this.findDestination = findDestination,
-//     this.findDate = findDate,
-//     this.findvehicle = findVehicle,
-//     this.findTelephone = findTelephone
-// }
 
 
 
@@ -39,16 +31,18 @@ rideContainerForm.addEventListener("submit", function compare(event){
 
 actualRender(searchedLocation)
 
+
 rideContainerForm.reset()
 
 })
 
 
 function actualRender(searchedLocation){
-   render.innerHTML= ""
+    render.innerHTML= ""
     const ul = document.createElement("ul")
     render.appendChild(ul)
 
+    let tripsFound = false
     for(let i=0; i< journeys.length; i++ ){
         if (searchedLocation === journeys[i].findDestination || searchedLocation === journeys[i].findLocation ){
 
@@ -62,20 +56,14 @@ function actualRender(searchedLocation){
             a.textContent = journeys[i].findTelephone
             li.appendChild(a)
 
-            // ul.appendChild(li)
-        }
-        else{
-            alert(`Sorry! we have no trips to ${searchedLocation}`)
-        }
+            tripsFound = true
+        } 
+
+    }   
+    if(!tripsFound){
+        alert(`Sorry! we have no trips to ${searchedLocation}`)
     }
 
+
 }
-
-// `journeys[i].findName,journeys[i].findDestination , journeys[i].findLocation, journeys[i].findVehicle,journeys[i].findDate,journeys[i].findTelephone`
-
-
-// new Find(journeys[i].findName,journeys[i].findLocation,journeys[i].findDestination,journeys[i].findDate,journeys[i].findVehicle,journeys[i].findTelephone)
-
-// `${journeys[i].findName},${journeys[i].findDestination} , ${journeys[i].findLocation}, ${journeys[i].findVehicle},${journeys[i].findDate},${journeys[i].findTelephone}`
-// 
 
